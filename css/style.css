@@ -1,0 +1,727 @@
+/* 1vw of 1440px is 14.4px. 14.4px will be subtracted from the giving font size in px and then converted to rem. finally, this would be used to set the font size like this: for a 20px font size, font-size: calc(0.35rem + 1vw);. this solves all accesibility issues*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83.33%;
+    height: 4.79vw;
+    margin: 0 8.33%;
+    position: absolute;
+    top: 2.78vw;
+    background: #82BAD1;
+    z-index: 10;
+}
+
+#logo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.35rem + 1vw);
+    line-height: 23px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 57.04%;
+    height: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 19px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 28.75vw;
+    
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    color: #fff;
+    /* color: #f0c000; */
+}
+
+nav span{
+    border: 0.069vw solid #212121;
+    border-radius: 0.28vw;
+    width: 10.42vw;
+    height: 3.40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav span:hover{
+    cursor: pointer;
+    background: #212121;
+    color: #FFF;
+    border: 0.069vw solid rgb(16, 236, 185);
+}
+
+#sectionOne{
+    padding: 9.79vw 8.33vw;
+    background: #82BAD1;
+    height: 48.68vw;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#sectionOne > img{
+    width: 55.90vw;
+    height: 45.97vw;
+    position: absolute;
+    right: -100vw;
+    bottom: 0;
+    transition: all .8s ease-in-out;
+}
+
+#sectionOneFirstDiv{
+    width: 27.01vw;
+    /* width: 389px; */
+    margin-bottom: 3.33vw;
+}
+
+#sectionOneFirstDiv p{
+    width: 24.72vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(-0.025rem + 1vw);
+    line-height: 1.46vw;
+    margin-top: 1.39vw;
+}
+
+#sectionOneFirstDiv h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    /* font-size: calc(3.1rem + 1vw); */
+    font-size: calc(0.1rem + 4.1vw);
+    line-height: 5.21vw;
+}
+
+#sectionOneFirstDiv h1 span{
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(2.1rem + 1vw);
+    font-weight: 600;
+    display: block;
+    color: rgba(142, 4, 4, 1);
+}
+
+#sectionOneFirstDiv h1 span em{
+    font-weight: 400;
+    color: rgba(33, 33, 33, 1);
+}
+
+#sectionOneSecondDiv button{
+    width: 11.67vw;
+    height: 3.75vw;
+    color: #fff;
+    font-size: calc(0.1rem + 1vw);
+    background: #2D3437;
+    border-radius: 0.28vw;
+    margin-bottom: 2.01vw;
+}
+
+#sectionOneSecondDivInner{
+    display: flex;
+    justify-content: space-between;
+    width: 28.68vw;
+}
+
+#sectionOneSecondDivInner div span{
+    display: block;
+}
+
+.sectionOneNumbers{
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.6rem + 1vw);
+}
+
+.sectionOneNumbersReference{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(-0.025rem + 1vw);
+    line-height: 1.46vw;
+}
+
+#bestSellingProperties{
+    height: 56.52vw;
+    padding: 9.34vw 8.40vw 0 8.26vw;
+}
+
+#titleAndBtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+#titleAndBtn h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.35rem + 1vw);
+    line-height: 1.597vw;
+}
+
+#titleAndBtn span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+    display: flex;
+    align-items: center;
+}
+
+#titleAndBtn span svg{
+    width: 2.43vw;
+    height: 0.90vw;
+}
+
+#titleAndBtn span:hover{
+    cursor: pointer;
+}
+
+#houseListing{
+    margin-top: 4.06vw;
+    display: grid;
+    grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-column-gap: 4.44vw;
+	grid-row-gap: 2.85vw;
+}
+
+.house{
+    padding: 1.18vw;
+    display: flex;
+    box-shadow: 8px 4px 18px rgba(0, 0, 0, 0.05), -8px 8px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.house img{
+    /* width: 275px;
+    height: 227px; */
+    width: 19.1vw;
+    height: 15.76vw;
+    background: linear-gradient(0deg, rgba(61, 145, 189, 0.2), rgba(61, 145, 189, 0.2));
+    border-radius: 4px 0px 0px 4px;
+}
+
+.houseInnerDiv{
+    /* width: 257px;
+    height: 227px; */
+    width: 17.85vw;
+    height: 15.76vw;
+    padding: 1.875vw 0 1.875vw 1.74vw;
+}
+
+.houseLocation{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+}
+
+.houseLocation svg{
+    transform: translateY(15%);
+    width: 0.97vw;
+    height: 1.32vw;
+    margin-right: 1.04vw;
+}
+
+.houseProperties{
+    display: grid;
+    width: 11.68vw;
+    /* width: 125px; */
+    grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-column-gap: 2.5vw;
+	/* grid-column-gap: 36px; */
+	grid-row-gap: 0.76vw;
+	/* grid-row-gap: 11px; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(-0.24rem + 1vw);
+    line-height: 1.25vw;
+    margin: 0.69vw 0 0.83vw 0;
+}
+
+.housePricing{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+}
+
+.bedroom svg{
+    transform: translateY(15%);
+    margin-right: 0.69vw;
+    width: 1.32vw;
+    height: 1.32vw;
+}
+
+.bathroom svg{
+    transform: translateY(15%);
+    margin-right: 0.69vw;
+    width: 1.39vw;
+    height: 1.11vw;
+}
+
+.scale svg{
+    transform: translateY(15%);
+    margin-right: 0.69vw;
+    width: 1.18vw;
+    height: 1.18vw;
+}
+.size svg{
+    transform: translateY(15%);
+    margin-right: 0.69vw;
+    width: 1.39vw;
+    height: 1.39vw;
+}
+
+.viewDetailsAndLike{
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewDetailsAndLike > span{
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.viewDetailsAndLike > span svg{
+    width: 3.06vw;
+    height: 3.06vw;
+}
+
+.viewDetailsAndLike > span svg:hover{
+    cursor: pointer;
+    width: 3.26vw;
+    height: 3.26vw; 
+}
+
+.viewDetails{
+    width: 10.97vw;
+    height: 3.06vw;
+    background: #2D3437;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.28vw;
+    margin-top: 0.83vw;
+}
+
+.viewDetails span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+}
+
+.viewDetails:hover{
+    cursor: pointer;
+    color: #2D3437;
+    background: rgb(199, 111, 111);
+}
+
+#ourServices{
+    position: relative;
+    height: 28.82vw;
+    padding: 2.85vw 7.43vw 2.78vw 8.4vw;
+}
+
+#ourServicesContents{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ourServicesContentsImgDiv{
+    display: grid;
+    width: 51.25vw;
+    height: 23.15vw;
+    grid-template-columns: 28.47vw 17.78vw;
+	grid-template-rows: auto;
+	grid-column-gap: 5vw;
+	grid-row-gap: 3.75vw;
+}
+
+#ourServicesContentsImgDiv img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#rectangleOne{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#ourServicesContentsDiv{
+    width: 25.45vw;
+    height: 23.15vw;
+}
+
+#ourServicesContentsDivSpanTwo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(1.1rem + 1vw);
+    line-height: 2.64vw;
+    margin-left: 0.17vw;
+}
+
+#ourServicesContentsDiv > p{
+    margin-top: 1.94vw;
+    width: 24.44vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+}
+
+#ourServicesContentsDiv > div{
+    margin: 1.46vw 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 1.46vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+}
+
+#ourServicesContentsDiv > div > span > svg{
+    position: relative;
+    top: 0.41vw;
+    width: 1.53vw;
+    height: 1.53vw;
+}
+
+#ourServicesBlueBox{
+    width: 62.36vw;
+    height: 20.14vw;
+    background: #82BAD1;
+    position: absolute;
+    left: 0px;
+    top: 8.68vw;
+    z-index: -1;
+}
+
+#ourServicesContentsDiv > span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+    display: flex;
+}
+
+#ourServicesContentsDiv > span:hover{
+    cursor: pointer;
+}
+
+#ourServicesContentsDiv > span > svg{
+    width: 2.43vw;
+    height: 0.90vw;
+    align-self: center;
+}
+
+#ourServicesContentsDivSpanOne{
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.35rem + 1vw);
+    line-height: 1.6vw;
+    text-align: right;
+    margin-bottom: 1.46vw;
+}
+
+#ceoThoughts{
+    padding: 2.92vw 8.33vw 2.99vw 8.33vw;
+}
+
+#ceo{
+    text-align: center;
+    padding: 0 13.61vw 1.81vw 14.17vw;
+    border-bottom: 0.21vw #2D3437 solid;
+}
+
+#ceo p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(0.6rem + 1vw);
+    line-height: 2.5vw;
+    margin-bottom: 1.25vw;
+}
+
+#ceo span{
+    display: block;
+}
+
+#ceoName{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(0.1rem + 1vw);
+    line-height: 1.67vw;
+}
+
+#ceoPosition{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(-0.025rem + 1vw);
+    line-height: 1.46vw;
+}
+
+#companyList{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.36vw;
+}
+
+#companyList span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.6rem + 1vw);
+    line-height: 2.5vw;
+    display: block;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+#companyList img{
+    width: 4.44vw;
+    height: 4.44vw;
+    /* margin-left: 54px; */
+}
+
+#ourClients{
+    height: 38.33vw;
+    background: #2D3437;
+}
+
+#ourClients{
+    color: #ffffffff;
+    padding: 1.81vw 8.33vw;
+}
+
+#ourClients h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.35rem + 1vw);
+    line-height: 1.6vw;
+}
+
+#ourClientsSubHeadingAndControls{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.46vw 0 7.08vw 0;
+}
+
+#ourClientsSubHeadingAndControls svg:hover{
+    cursor: pointer;
+}
+
+#ourCLientBackArrow{
+    width: 1.39vw;
+    height: 1.04vw;
+}
+
+#ourCLientFrontArrow{
+    width: 2.57vw;
+    height: 1.04vw;
+}
+
+#ourClientsSubHeadingAndControls h3{
+    width: 16.73vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.8rem + 1vw);
+    line-height: 2.64vw;
+}
+
+#clients{
+    display: flex;
+    justify-content: space-between;
+}
+
+#clients > div{
+    display: flex;
+    justify-content: space-between;
+    width: 39.79vw;
+    height: 15.76vw;
+}
+
+#clients img{
+    width: 15.07vw;
+    height: 15.76vw;
+}
+
+#aboutClient{
+    width: 22.78vw;
+    height: 15.69vw;
+}
+
+#aboutClient span{
+    display: block;
+}
+
+.nameOfClient{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.35rem + 1vw);
+    line-height: 2.08vw;
+}
+
+#job{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(-0.025rem + 1vw);
+    line-height: 1.46vw;
+    margin: 0.63vw 0 1.94vw 0;
+}
+
+#aboutClient p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(-0.025rem + 1vw);
+    line-height: 168%;
+}
+
+footer {
+    padding: 2.92vw 8.33vw;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 35.21vw;
+}
+
+#footerTopDiv{
+    margin-bottom: 2.22vw;
+    align-items: center;
+}
+
+#footerTopDiv span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(0.92rem + 1vw);
+    line-height: 2.36vw;
+}
+
+#footerTopDiv li{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(-0.025rem + 1vw);
+    line-height: 1.11vw;
+}
+
+#footerBottomDiv{
+    justify-content: end;
+}
+
+#footerLogos{
+    width: 11.67vw;
+}
+
+#footerLogos svg{
+    width: 1.67vw;
+    height: 1.67vw;
+}
+
+#footerLogos svg:hover{
+    cursor: pointer;
+    width: 1.87vw;
+    height: 1.87vw;
+}
+
+#footerTopDiv li:hover{
+    cursor: pointer;
+    font-size: calc(0.000rem + 1vw);
+}
+
+@media(max-width:1338px){
+    #sectionOneFirstDiv{
+        margin-bottom: 1.33vw;
+    }
+    #sectionOneFirstDiv h1{
+        font-size: calc(1.7rem + 1vw);
+        line-height: 5.0vw;
+    }
+    #sectionOneFirstDiv h1 span{
+        font-size: calc(1.1rem + 1vw);
+    }
+    #sectionOneFirstDiv p{
+        margin-top: 0.39vw;
+    }
+    #sectionOneSecondDiv button{
+        margin-bottom: 1.01vw;
+    }
+    .sectionOneNumbers{
+        font-size: calc(0.4rem + 0.8vw);
+    }
+}
+
+@media(max-width:1000px){
+    #ourClientsSubHeadingAndControls h3{
+        line-height: 3.2vw;
+    }
+}
+
